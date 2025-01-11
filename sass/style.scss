@@ -1,0 +1,231 @@
+@import './getters.scss';
+@import './card.scss';
+@import './dropdown.scss';
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: get-color('site-bg') !important;
+    height: 100% !important;
+}
+
+main {
+
+    aside {
+        position: fixed;
+        height: 100% !important;
+        width: 400px !important;
+        background-color: get-color('secondary') !important;
+        border-right: 1px solid get-color('tertiary') !important;
+
+        .cv-picture {
+            display: flex;
+            justify-content: center;
+
+            img {
+                margin-top: 20px;
+                border-radius: 25px;
+                width: 220px;
+            }
+        }
+
+        h1 {
+            margin-top: 14px;
+            color: get-color('text-color');
+            text-align: center;
+        }
+    }
+
+    .content-flow {
+        padding-left: 400px;
+        width: 100% !important;
+
+        nav {
+            border-bottom: 2px solid get-color('tertiary') !important;
+            padding: 10px;
+
+            #navbar-buttons{
+                a{
+                    padding: 12px !important;
+                    text-decoration: none;
+                    color: get-color('text-color-second');
+                    cursor: pointer !important;
+                    &:hover {
+                        color: get-color-hover('text-color-second');
+                    }
+                    display: unset !important;
+                }
+                .dropdown-item{
+                    margin: 0px !important;
+                }
+            }
+
+            .active {
+                border-bottom: 2px solid get-color('');
+            }
+        }
+    }
+
+}
+
+.content-container {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.gallery-container {
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+.text-color {
+    color: get-color('text-color');
+}
+
+.lists {
+    list-style: none;
+    padding: 0px;
+    text-align: center;
+    font-size: 16px;
+
+    li {
+        margin-top: 5px;
+    }
+}
+
+.link {
+    text-decoration: none;
+    color: get-color('text-color-second');
+    cursor: pointer !important;
+    &:hover {
+        color: get-color-hover('text-color-second');
+
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+
+.divider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+
+    .line {
+        width: 100%;
+        border-bottom: 1px solid get-color('tertiary') !important;
+    }
+
+    .dot {
+        padding: 10px;
+        color: get-color('text-color-second') !important;
+    }
+}
+
+.text-color-second {
+    color: get-color('text-color-second');
+    padding: 10px;
+}
+
+.gap {
+    display: flex;
+    gap: 15px;
+}
+
+.button-backgroundless {
+    background-color: transparent !important;
+    border: none !important;
+    font-size: 20px;
+    color: get-color('text-color');
+}
+
+.title-with-button{
+    display: flex;
+    gap: 10px;
+}
+
+.buttons{
+    list-style: none !important;
+    display: flex;
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+@media (max-width:991px) {
+
+    .content-flow {
+        padding-left: 0px !important;
+        width: 100% !important;
+    }
+
+    .buttons {
+        display: none !important;
+        
+    }
+
+    main {
+        aside {
+            height: unset !important;
+            width: 300px !important;
+            position: unset !important;
+        }
+    }
+
+    #dropdown-menu{
+        li{
+            a{
+                border: none !important;
+            }
+        }
+    }
+
+}
+
+@media (max-width:1200px) {
+    .content-container {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .gallery-container {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}
+
+
+.bilimetri-offcanvas {
+    width: unset !important;
+    background-color: get-color('secondary') !important;
+
+    .offcanvas-body {
+        padding: 0px !important;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: get-color('secondary');
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: get-color('tertiary');
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: get-color('primary');
+}

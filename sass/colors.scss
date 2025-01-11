@@ -1,0 +1,29 @@
+$color-schema:(
+    "site-bg":(
+        "dark":rgb(57, 57, 57)
+    ),
+    "primary":(
+        "dark":rgb(42, 42, 42)
+    ),
+    "secondary":(
+        "dark":rgb(46, 46, 46)
+    ),
+    "tertiary":(
+        "dark":rgb(93, 93, 93)
+    ),
+    "text-color":(
+        "dark":rgb(207, 207, 207)
+    ),
+    "text-color-second":(
+        "dark":rgb(195, 195, 195)
+    ),
+  "text-color-light":(
+        "dark":rgb(234, 234, 234)
+    ),
+);
+
+$lightness-schema-hover:(
+    "text-color-second":(
+        "dark":70%
+    ),
+);

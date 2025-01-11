@@ -1,0 +1,21 @@
+@use "sass:color";
+@use "sass:list";
+@use "sass:map";
+@import './colors.scss';
+
+$theme-colors:$color-schema;
+$lightness:$lightness-schema-hover;
+
+$theme: 'dark'; // set theme here
+
+//colors
+@function get-color($color-name) {
+    @return map.get($theme-colors,$color-name,$theme);; // get color from map
+}
+
+@function get-color-hover($color-name) {
+    $color :map.get($theme-colors,$color-name,$theme);
+    $lightness :map.get($lightness,$color-name,$theme);
+    @return color.change($color, $lightness: $lightness);
+}
+//colors

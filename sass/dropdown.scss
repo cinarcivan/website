@@ -1,0 +1,9 @@
+.dropdown-menu{
+    background-color: get-color('secondary') !important;
+    .active{
+        background-color: get-color('tertiary') !important;
+    }
+    a:active{
+        background-color:  get-color('tertiary') !important;
+    }
+}

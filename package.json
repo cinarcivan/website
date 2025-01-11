@@ -1,0 +1,14 @@
+{
+  "name": "cinarcivan-website",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass ./sass/style.scss ./style/style.css -w"
+  },
+  "author": "emirhan@scihook.org, cinar@scihook.org",
+  "license": "MIT",
+  "description": "Static personal CV website",
+  "dependencies": {
+    "sass": "^1.79.3"
+  }
+}

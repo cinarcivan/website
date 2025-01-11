@@ -1,0 +1,5 @@
+User-agent: * # for all robots
+
+Disallow: /test/  # blocks access to test folder
+
+Sitemap: https://cinarcivan.com/sitemap.xml  # Sitemap path

@@ -1,0 +1,18 @@
+.card{
+    border: 1px solid get-color('tertiary') !important;
+    img{
+        height: 300px;
+        object-fit: cover;
+    }
+    .card-footer{
+        background-color: get-color('secondary') !important;
+        color: get-color('text-color') !important;
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid get-color('tertiary');
+    }
+    .card-body{
+        background-color: get-color('secondary') !important;
+        color: get-color('text-color') !important;
+    }
+}

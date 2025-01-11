@@ -1,0 +1,224 @@
+.card {
+  border: 1px solid rgb(93, 93, 93) !important;
+}
+.card img {
+  height: 300px;
+  object-fit: cover;
+}
+.card .card-footer {
+  background-color: rgb(46, 46, 46) !important;
+  color: rgb(207, 207, 207) !important;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid rgb(93, 93, 93);
+}
+.card .card-body {
+  background-color: rgb(46, 46, 46) !important;
+  color: rgb(207, 207, 207) !important;
+}
+
+.dropdown-menu {
+  background-color: rgb(46, 46, 46) !important;
+}
+.dropdown-menu .active {
+  background-color: rgb(93, 93, 93) !important;
+}
+.dropdown-menu a:active {
+  background-color: rgb(93, 93, 93) !important;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: rgb(57, 57, 57) !important;
+  height: 100% !important;
+}
+
+main aside {
+  position: fixed;
+  height: 100% !important;
+  width: 400px !important;
+  background-color: rgb(46, 46, 46) !important;
+  border-right: 1px solid rgb(93, 93, 93) !important;
+}
+main aside .cv-picture {
+  display: flex;
+  justify-content: center;
+}
+main aside .cv-picture img {
+  margin-top: 20px;
+  border-radius: 25px;
+  width: 220px;
+}
+main aside h1 {
+  margin-top: 14px;
+  color: rgb(207, 207, 207);
+  text-align: center;
+}
+main .content-flow {
+  padding-left: 400px;
+  width: 100% !important;
+}
+main .content-flow nav {
+  border-bottom: 2px solid rgb(93, 93, 93) !important;
+  padding: 10px;
+}
+main .content-flow nav #navbar-buttons a {
+  padding: 12px !important;
+  text-decoration: none;
+  color: rgb(195, 195, 195);
+  cursor: pointer !important;
+  display: unset !important;
+}
+main .content-flow nav #navbar-buttons a:hover {
+  color: #b3b3b3;
+}
+main .content-flow nav #navbar-buttons .dropdown-item {
+  margin: 0px !important;
+}
+main .content-flow nav .active {
+  border-bottom: 2px solid;
+}
+
+.content-container {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.gallery-container {
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
+.text-color {
+  color: rgb(207, 207, 207);
+}
+
+.lists {
+  list-style: none;
+  padding: 0px;
+  text-align: center;
+  font-size: 16px;
+}
+.lists li {
+  margin-top: 5px;
+}
+
+.link {
+  text-decoration: none;
+  color: rgb(195, 195, 195);
+  cursor: pointer !important;
+}
+.link:hover {
+  color: #b3b3b3;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.divider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+}
+.divider .line {
+  width: 100%;
+  border-bottom: 1px solid rgb(93, 93, 93) !important;
+}
+.divider .dot {
+  padding: 10px;
+  color: rgb(195, 195, 195) !important;
+}
+
+.text-color-second {
+  color: rgb(195, 195, 195);
+  padding: 10px;
+}
+
+.gap {
+  display: flex;
+  gap: 15px;
+}
+
+.button-backgroundless {
+  background-color: transparent !important;
+  border: none !important;
+  font-size: 20px;
+  color: rgb(207, 207, 207);
+}
+
+.title-with-button {
+  display: flex;
+  gap: 10px;
+}
+
+.buttons {
+  list-style: none !important;
+  display: flex;
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+@media (max-width: 991px) {
+  .content-flow {
+    padding-left: 0px !important;
+    width: 100% !important;
+  }
+  .buttons {
+    display: none !important;
+  }
+  main aside {
+    height: unset !important;
+    width: 300px !important;
+    position: unset !important;
+  }
+  #dropdown-menu li a {
+    border: none !important;
+  }
+}
+@media (max-width: 1200px) {
+  .content-container {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .gallery-container {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+}
+.bilimetri-offcanvas {
+  width: unset !important;
+  background-color: rgb(46, 46, 46) !important;
+}
+.bilimetri-offcanvas .offcanvas-body {
+  padding: 0px !important;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(46, 46, 46);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(93, 93, 93);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(42, 42, 42);
+}
+
+/*# sourceMappingURL=style.css.map */
